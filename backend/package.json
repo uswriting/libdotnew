@@ -1,0 +1,19 @@
+{
+	"name": "backend",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"build": "cp ../lib.new.sh ./assets/lib.sh",
+		"deploy": "wrangler deploy",
+		"dev": "wrangler dev",
+		"start": "wrangler dev",
+		"test": "vitest",
+		"cf-typegen": "wrangler types"
+	},
+	"devDependencies": {
+		"@cloudflare/vitest-pool-workers": "^0.7.5",
+		"typescript": "^5.5.2",
+		"vitest": "~3.0.7",
+		"wrangler": "^4.5.1"
+	}
+}
